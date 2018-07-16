@@ -1,0 +1,128 @@
+/**
+ * Alert
+ */
+
+@import '../common/variable.less';
+
+.lu-alert {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 8px 48px 8px 16px;
+    color: #FFF;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: @border-radius-base;
+    transition: opacity .3s;
+    overflow: hidden;
+    opacity: 1;
+
+    &__content {
+        flex: 1;
+        padding-right: 8px;
+    }
+    &__message {
+        font-size: @font-size-sm;
+    }
+    &__description {
+        margin-top: 4px;
+        font-size: @font-size-sm;
+    }
+    &__close {
+        font-size: @font-size-sm;
+        line-height: 20px;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    &--primary {
+        border-color: @border-color-primary;
+        background-color: @bg-color-primary;
+    }
+    &--secondary {
+        border-color: @border-color-secondary;
+        background-color: @bg-color-secondary;
+    }
+    &--success {
+        border-color: @border-color-success;
+        background-color: @bg-color-success;
+    }
+    &--danger {
+        border-color: @border-color-danger;
+        background-color: @bg-color-danger;
+    }
+    &--warning {
+        border-color: @border-color-warning;
+        background-color: @bg-color-warning;
+    }
+    &--info {
+        border-color: @border-color-info;
+        background-color: @bg-color-info;
+    }
+    &--primary.outline {
+        background-color: #FFF;
+        .lu-alert__message,
+        .lu-alert__description,
+        .lu-alert__icon {
+            color: @color-primary;
+        }
+        .lu-alert__close {
+            color: @color-primary;
+        }
+    }
+    &--secondary.outline {
+        background-color: #FFF;
+        .lu-alert__message,
+        .lu-alert__description,
+        .lu-alert__icon {
+            color: @color-secondary;
+        }
+        .lu-alert__close {
+            color: @color-secondary;
+        }
+    }
+    &--success.outline {
+        background-color: #FFF;
+        .lu-alert__message,
+        .lu-alert__description,
+        .lu-alert__icon {
+            color: @color-success;
+        }
+        .lu-alert__close {
+            color: @color-success;
+        }
+    }
+    &--danger.outline {
+        background-color: #FFF;
+        .lu-alert__message,
+        .lu-alert__description,
+        .lu-alert__icon {
+            color: @color-danger;
+        }
+        .lu-alert__close {
+            color: @color-danger;
+        }
+    }
+    &--warning.outline {
+        background-color: #FFF;
+        .lu-alert__message,
+        .lu-alert__description,
+        .lu-alert__icon {
+            color: @color-warning;
+        }
+        .lu-alert__close {
+            color: @color-warning;
+        }
+    }
+    &--info.outline {
+        background-color: #FFF;
+        .lu-alert__message,
+        .lu-alert__description,
+        .lu-alert__icon {
+            color: @color-info;
+        }
+        .lu-alert__close {
+            color: @color-info;
+        }
+    }
+}

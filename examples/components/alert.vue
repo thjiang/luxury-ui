@@ -1,13 +1,29 @@
 <template>
     <div>
         <br><br><br>
-        <lu-alert type="primary">Primary</lu-alert>
-        <lu-alert type="secondary">Secondary</lu-alert>
-        <lu-alert type="success">Success</lu-alert>
-        <lu-alert type="danger">Danger</lu-alert>
-        <lu-alert type="warning">Warning</lu-alert>
-        <lu-alert type="info">Info</lu-alert>
-        <lu-alert type="text">Text</lu-alert>
+        <lu-alert message="Primary" type="primary">Primary</lu-alert>
+        <br>
+        <lu-alert message="Secondary" type="secondary" closable>Secondary</lu-alert>
+        <br>
+        <lu-alert message="Success" type="success">Success</lu-alert>
+        <br>
+        <lu-alert message="Danger" type="danger">Danger</lu-alert>
+        <br>
+        <lu-alert message="Warning" type="warning">Warning</lu-alert>
+        <br>
+        <lu-alert message="Info" type="info" closable close-text="这是一个关闭按钮">Info</lu-alert>
+        <br><br><br>
+        <lu-alert message="Primary" type="primary" outline> Primary</lu-alert>
+        <br>
+        <lu-alert message="Secondary" type="secondary" outline closable>Secondary</lu-alert>
+        <br>
+        <lu-alert message="Success" type="success" outline> Success</lu-alert>
+        <br>
+        <lu-alert message="Danger" type="danger" outline> Danger</lu-alert>
+        <br>
+        <lu-alert message="Warning" type="warning" outline> Warning</lu-alert>
+        <br>
+        <lu-alert message="Info" type="info" outline closable close-text="这是一个关闭按钮">Info</lu-alert>
         <br><br><br>
     </div>
 </template>
