@@ -1,12 +1,12 @@
 <template>
-    <button>
+    <div>
         <slot></slot>
-    </button>
+    </div>
 </template>
 
 <script>
 export default {
-    name: "lu-button"
+    name: "lu-alert"
 };
 </script>
 

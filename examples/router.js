@@ -14,5 +14,8 @@ export default {
     }, {
         path: '/button',
         component: (resolve) => require(['./components/button.vue'], resolve)
+    }, {
+        path: '/alert',
+        component: (resolve) => require(['./components/alert.vue'], resolve)
     }]
 };

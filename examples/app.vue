@@ -64,6 +64,7 @@ export default {
     }
 
     .app {
+        font-family: 'Roboto Slab', Roboto, Noto, sans-serif;
         .nav {
             float: left;
             line-height: 50px;

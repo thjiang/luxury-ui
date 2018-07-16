@@ -30,6 +30,7 @@
         "no-loop-func": 1,
         "space-before-function-paren": ["error", "never"],
         "object-shorthand": 0,
-        "no-use-before-define": 0
+        "no-use-before-define": 0,
+        "arrow-parens": ["as-needed", { "requireForBlockBody": true }]
     }
 }

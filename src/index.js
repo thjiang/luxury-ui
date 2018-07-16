@@ -1,7 +1,11 @@
+import './styles/index.less';
+
 import Button from './components/button/index';
+import Alert from './components/alert/index';
 
 const components = {
-    Button
+    Button,
+    Alert
 };
 
 const install = function(Vue) {

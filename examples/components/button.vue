@@ -1,14 +1,13 @@
 <template>
     <div>
         <br><br><br>
-        <Button type="default">Default</Button>
-        <Button type="primary">Primary</Button>
-        <Button type="dashed">Dashed</Button>
-        <Button type="info">Info</Button>
-        <Button type="success">Success</Button>
-        <Button type="warning">Warning</Button>
-        <Button type="error">Error</Button>
-        <Button type="text">Text</Button>
+        <lu-button type="primary">Primary</lu-button>
+        <lu-button type="secondary">Secondary</lu-button>
+        <lu-button type="success">Success</lu-button>
+        <lu-button type="danger">Danger</lu-button>
+        <lu-button type="warning">Warning</lu-button>
+        <lu-button type="info">Info</lu-button>
+        <lu-button type="text">Text</lu-button>
         <br><br><br>
     </div>
 </template>
