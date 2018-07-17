@@ -7,7 +7,7 @@
         <br>
         <lu-alert message="Success" type="success">Success</lu-alert>
         <br>
-        <lu-alert message="Danger" type="danger">Danger</lu-alert>
+        <lu-alert message="Danger" type="danger" closable close-text="我知道了">Danger</lu-alert>
         <br>
         <lu-alert message="Warning" type="warning">Warning</lu-alert>
         <br>
@@ -19,7 +19,7 @@
         <br>
         <lu-alert message="Success" type="success" outline> Success</lu-alert>
         <br>
-        <lu-alert message="Danger" type="danger" outline> Danger</lu-alert>
+        <lu-alert message="Danger" type="danger" outline closable close-text="我知道了"> Danger</lu-alert>
         <br>
         <lu-alert message="Warning" type="warning" outline> Warning</lu-alert>
         <br>

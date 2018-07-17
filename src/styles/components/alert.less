@@ -5,65 +5,73 @@
 @import '../common/variable.less';
 
 .lu-alert {
-    position: relative;
-    display: flex;
-    width: 100%;
-    padding: 8px 48px 8px 16px;
-    color: #FFF;
     line-height: 1.5;
-    border: 1px solid #ccc;
-    border-radius: @border-radius-base;
-    transition: opacity .3s;
+
+    position: relative;
+
+    display: flex;
     overflow: hidden;
+
+    width: 100%;
+    padding: 8px 32px 8px 16px;
+
+    transition: opacity .3s;
+
     opacity: 1;
+    color: @color-primary;
+    border: 1px solid #FFF;
+    border-radius: @border-radius-base;
 
     &__content {
         flex: 1;
+
         padding-right: 8px;
     }
     &__message {
         font-size: @font-size-sm;
     }
     &__description {
-        margin-top: 4px;
         font-size: @font-size-sm;
+
+        margin-top: 4px;
     }
     &__close {
         font-size: @font-size-sm;
         line-height: 20px;
-        opacity: 1;
+
         cursor: pointer;
+
+        opacity: 1;
     }
 
     &--primary {
-        border-color: @border-color-primary;
-        background-color: @bg-color-primary;
+        border-color: @alert-color-primary;
+        background-color: @alert-color-primary;
     }
     &--secondary {
-        border-color: @border-color-secondary;
-        background-color: @bg-color-secondary;
+        border-color: @alert-color-secondary;
+        background-color: @alert-color-secondary;
     }
     &--success {
-        border-color: @border-color-success;
-        background-color: @bg-color-success;
+        border-color: @alert-color-success;
+        background-color: @alert-color-success;
     }
     &--danger {
-        border-color: @border-color-danger;
-        background-color: @bg-color-danger;
+        border-color: @alert-color-danger;
+        background-color: @alert-color-danger;
     }
     &--warning {
-        border-color: @border-color-warning;
-        background-color: @bg-color-warning;
+        border-color: @alert-color-warning;
+        background-color: @alert-color-warning;
     }
     &--info {
-        border-color: @border-color-info;
-        background-color: @bg-color-info;
+        border-color: @alert-color-info;
+        background-color: @alert-color-info;
     }
     &--primary.outline {
+        border-color: @alert-color-primary;
         background-color: #FFF;
-        .lu-alert__message,
-        .lu-alert__description,
-        .lu-alert__icon {
+        .lu-alert__message, .lu-alert__description, .lu-alert__icon {
             color: @color-primary;
         }
         .lu-alert__close {
@@ -71,10 +79,9 @@
         }
     }
     &--secondary.outline {
+        border-color: @border-color-secondary;
         background-color: #FFF;
-        .lu-alert__message,
-        .lu-alert__description,
-        .lu-alert__icon {
+        .lu-alert__message, .lu-alert__description, .lu-alert__icon {
             color: @color-secondary;
         }
         .lu-alert__close {
@@ -82,10 +89,9 @@
         }
     }
     &--success.outline {
+        border-color: @border-color-success;
         background-color: #FFF;
-        .lu-alert__message,
-        .lu-alert__description,
-        .lu-alert__icon {
+        .lu-alert__message, .lu-alert__description, .lu-alert__icon {
             color: @color-success;
         }
         .lu-alert__close {
@@ -93,10 +99,9 @@
         }
     }
     &--danger.outline {
+        border-color: @border-color-danger;
         background-color: #FFF;
-        .lu-alert__message,
-        .lu-alert__description,
-        .lu-alert__icon {
+        .lu-alert__message, .lu-alert__description, .lu-alert__icon {
             color: @color-danger;
         }
         .lu-alert__close {
@@ -104,10 +109,9 @@
         }
     }
     &--warning.outline {
+        border-color: @border-color-warning;
         background-color: #FFF;
-        .lu-alert__message,
-        .lu-alert__description,
-        .lu-alert__icon {
+        .lu-alert__message, .lu-alert__description, .lu-alert__icon {
             color: @color-warning;
         }
         .lu-alert__close {
@@ -115,10 +119,9 @@
         }
     }
     &--info.outline {
+        border-color: @border-color-info;
         background-color: #FFF;
-        .lu-alert__message,
-        .lu-alert__description,
-        .lu-alert__icon {
+        .lu-alert__message, .lu-alert__description, .lu-alert__icon {
             color: @color-info;
         }
         .lu-alert__close {

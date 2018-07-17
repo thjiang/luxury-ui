@@ -4,7 +4,7 @@
             <p class="lu-alert__message" v-if="message" v-text="message"></p>
             <p class="lu-alert__description" v-if="description" v-text="description"></p>
         </div>
-        <i class="lu-alert__close" v-show="closable" @click="handleClose" v-text="closeText"></i>
+        <i class="icon lu-alert__close" v-show="closable" @click="handleClose" v-text="closeText"></i>
     </div>
 </template>
 
