@@ -1,5 +1,5 @@
 <template>
-    <div class="lu-alert" :class="[type ? `lu-alert--${type}` : '', outline ? 'outline' : '']" v-show="isShow">
+    <div class="lu-alert" :class="[type ? `lu-alert--${type}` : '', outline ? 'outline' : '', description ? 'lu-alert--with-description' : '']" v-show="isShow">
         <div class="lu-alert__content">
             <p class="lu-alert__message" v-if="message" v-text="message"></p>
             <p class="lu-alert__description" v-if="description" v-text="description"></p>

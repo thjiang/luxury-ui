@@ -3,28 +3,20 @@
  */
 
 @import '../common/variable.less';
-
 .lu-alert {
     line-height: 1.5;
-
     position: relative;
-
     display: flex;
     overflow: hidden;
-
     width: 100%;
     padding: 8px 32px 8px 16px;
-
     transition: opacity .3s;
-
     opacity: 1;
     color: @color-primary;
     border: 1px solid #FFF;
     border-radius: @border-radius-base;
-
     &__content {
         flex: 1;
-
         padding-right: 8px;
     }
     &__message {
@@ -32,18 +24,14 @@
     }
     &__description {
         font-size: @font-size-sm;
-
         margin-top: 4px;
     }
     &__close {
         font-size: @font-size-sm;
         line-height: 20px;
-
         cursor: pointer;
-
         opacity: 1;
     }
-
     &--primary {
         border-color: @alert-color-primary;
         background-color: @alert-color-primary;
@@ -71,7 +59,9 @@
     &--primary.outline {
         border-color: @alert-color-primary;
         background-color: #FFF;
-        .lu-alert__message, .lu-alert__description, .lu-alert__icon {
+        .lu-alert__message,
+        .lu-alert__description,
+        .lu-alert__icon {
             color: @color-primary;
         }
         .lu-alert__close {
@@ -81,7 +71,9 @@
     &--secondary.outline {
         border-color: @border-color-secondary;
         background-color: #FFF;
-        .lu-alert__message, .lu-alert__description, .lu-alert__icon {
+        .lu-alert__message,
+        .lu-alert__description,
+        .lu-alert__icon {
             color: @color-secondary;
         }
         .lu-alert__close {
@@ -91,7 +83,9 @@
     &--success.outline {
         border-color: @border-color-success;
         background-color: #FFF;
-        .lu-alert__message, .lu-alert__description, .lu-alert__icon {
+        .lu-alert__message,
+        .lu-alert__description,
+        .lu-alert__icon {
             color: @color-success;
         }
         .lu-alert__close {
@@ -101,7 +95,9 @@
     &--danger.outline {
         border-color: @border-color-danger;
         background-color: #FFF;
-        .lu-alert__message, .lu-alert__description, .lu-alert__icon {
+        .lu-alert__message,
+        .lu-alert__description,
+        .lu-alert__icon {
             color: @color-danger;
         }
         .lu-alert__close {
@@ -111,7 +107,9 @@
     &--warning.outline {
         border-color: @border-color-warning;
         background-color: #FFF;
-        .lu-alert__message, .lu-alert__description, .lu-alert__icon {
+        .lu-alert__message,
+        .lu-alert__description,
+        .lu-alert__icon {
             color: @color-warning;
         }
         .lu-alert__close {
@@ -121,11 +119,18 @@
     &--info.outline {
         border-color: @border-color-info;
         background-color: #FFF;
-        .lu-alert__message, .lu-alert__description, .lu-alert__icon {
+        .lu-alert__message,
+        .lu-alert__description,
+        .lu-alert__icon {
             color: @color-info;
         }
         .lu-alert__close {
             color: @color-info;
+        }
+    }
+    &--with-description {
+        .lu-alert__message {
+            font-weight: bold;
         }
     }
 }
