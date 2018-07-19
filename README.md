@@ -29,5 +29,17 @@ import Luxury from 'luxury-ui';
 Vue.use(Luxury);
 ```
 
+## Development
+```shell
+$ git clone git@github.com:thjiang/luxury-ui.git
+
+$ cd luxury-ui
+$ npm install
+$ npm run dll
+$ npm run dev
+```
+
+Open your browser and visit http://localhost:2048/build/.
+
 ## LICENSE
 [MIT](LICENSE)
