@@ -10,8 +10,8 @@ module.exports = (env) => {
     let publicPath = '/build/';
 
     if (env.NODE_ENV === 'prod') {
-        cdnpath = "https://c.icewish.top/const/cbg";
-        publicPath = "https://c.icewish.top/const/cbg";
+        cdnpath = "https://c.icewish.top/const/luxury";
+        publicPath = "https://c.icewish.top/const/luxury";
     }
 
     return {
@@ -51,7 +51,7 @@ module.exports = (env) => {
             new VueLoaderPlugin(),
             new webpack.DllReferencePlugin({
                 context: __dirname,
-                manifest: require('./build/dll/bundle-manifest.json')
+                manifest: require('../build/dll/bundle-manifest.json')
             }),
             new HtmlWebpackPlugin({
                 inject: false,

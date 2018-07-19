@@ -4,17 +4,18 @@
   "description": "A Material Design style UI components Library with Vue.js",
   "main": "index.js",
   "scripts": {
-    "dll": "webpack --config webpack.dll.config.js",
-    "dev": "webpack-dev-server --env.NODE_ENV=dev --hot",
-    "pro": "webpack --env.NODE_ENV=prod"
+    "dev": "webpack-dev-server --env.NODE_ENV=dev --hot --config config/webpack.config.js",
+    "pro": "webpack --env.NODE_ENV=prod",
+    "dll": "webpack --config config/webpack.dll.config.js",
+    "build": "webpack --env.NODE_ENV=prod --config config/webpack.build.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thjiang/luxury-ui.git"
   },
   "keywords": [
+    "Luxury",
     "Material",
-    "Design",
     "UI",
     "Library",
     "Vue"
