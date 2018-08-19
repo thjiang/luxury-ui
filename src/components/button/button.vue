@@ -1,13 +1,13 @@
 <template>
-    <button class="lu-btn" :class="[
+    <div class="lu-btn" :class="[
             type ? `lu-btn--${type}` : '',
             size ? `lu-btn--${size}` : '',
-            outline ? `lu-btn--${type}--outline` : ''
+            outline ? `outline` : ''
         ]" :disabled="disabled" :type="nativeType" @click="handleClick">
-        <span v-if="showSlot" ref="slot">
+        <span class="lu-button__slot">
             <slot></slot>
         </span>
-    </button>
+    </div>
 </template>
 
 <script>

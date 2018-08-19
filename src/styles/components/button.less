@@ -6,36 +6,88 @@
 .lu-btn {
     display: inline-block;
     padding: @btn-padding-base;
+    color: @color-light;
+    border: 1px solid #FFF;
+    border-radius: @border-radius-base;
     font-size: 0;
     outline: 0;
     line-height: 1.5;
     text-align: center;
     white-space: nowrap;
-    border: 1px solid @btn-default-border;
-    border-radius: @border-radius-base;
-    background-color: @btn-default-bg;
     transition: background 0.2s;
     user-select: none;
     cursor: pointer;
-    &:hover {
-        background-color: @btn-default-bg-hover;
+    .lu-button__slot {
+        font-size: @font-size-sm;
     }
-    &:active {
-        background-color: @btn-default-bg-active;
+    &--primary {
+        border-color: @btn-color-primary;
+        background-color: @btn-color-primary;
     }
-    &:disabled,
-    &:disabled:hover,
-    &:disabled:active {
-        cursor: not-allowed;
-        color: @btn-disabled-color;
-        border-color: @btn-disabled-border;
-        background-color: @btn-disabled-bg;
+    &--secondary {
+        border-color: @btn-color-secondary;
+        background-color: @btn-color-secondary;
     }
-    &--primary,
-    &--success,
-    &--error,
-    &--warning,
+    &--success {
+        border-color: @btn-color-success;
+        background-color: @btn-color-success;
+    }
+    &--danger {
+        border-color: @btn-color-danger;
+        background-color: @btn-color-danger;
+    }
+    &--warning {
+        border-color: @btn-color-warning;
+        background-color: @btn-color-warning;
+    }
     &--info {
-        color: @color-white;
+        border-color: @btn-color-info;
+        background-color: @btn-color-info;
+    }
+    &--dark {
+        border-color: @btn-color-dark;
+        background-color: @btn-color-dark;
+    }
+    &--primary.outline {
+        color: @btn-color-primary;
+        background-color: #FFF;
+        &:hover {
+            background-color: #DCDCDC;
+        }
+    }
+    &--secondary.outline {
+        color: @btn-color-secondary;
+        background-color: #FFF;
+        &:hover {
+            background-color: #DCDCDC;
+        }
+    }
+    &--success.outline {
+        color: @btn-color-success;
+        background-color: #FFF;
+        &:hover {
+            background-color: #DCDCDC;
+        }
+    }
+    &--danger.outline {
+        color: @btn-color-danger;
+        background-color: #FFF;
+        &:hover {
+            background-color: #DCDCDC;
+        }
+    }
+    &--warning.outline {
+        color: @btn-color-warning;
+        background-color: #FFF;
+        &:hover {
+            background-color: #DCDCDC;
+        }
+    }
+    &--info.outline {
+        color: @btn-color-info;
+        background-color: #FFF;
+        &:hover {
+            background-color: #DCDCDC;
+        }
     }
 }
